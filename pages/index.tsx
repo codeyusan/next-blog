@@ -5,7 +5,7 @@ export default function Detail() {
   const router = useRouter()
   useEffect(() => {
     router.push('/home')
-  }, [])
+  }, [router])
 
   return (
     <main></main>

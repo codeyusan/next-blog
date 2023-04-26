@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 export default function Markdown({ essay }: any) {
   return <div className="min-h-screen flex justify-center p-12">
     <article className="prose prose-slate">
-      <ReactMarkdown children={essay}></ReactMarkdown>
+      <ReactMarkdown>{essay}</ReactMarkdown>
     </article>
   </div>;
 }

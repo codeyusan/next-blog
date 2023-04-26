@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="w-full bg-white flex h-16 justify-center">
       <section className="flex items-center max-w-screen-xl w-full justify-between">
-        <section className="text-black text-2xl text-gray-500">MilitantY's Blog</section>
+        <section className="text-black text-2xl text-gray-500">MilitantY&apos;s Blog</section>
         <Link href="https://github.com/">
           <Image
             src={github}
