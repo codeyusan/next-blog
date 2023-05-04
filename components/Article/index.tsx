@@ -28,6 +28,9 @@ export default function Article({files}: HomeProps) {
             className='cursor-pointer border-dashed border-2 border-sky-500 mb-4 px-3 py-2'
           >
             <span>
+              {index+1}
+            </span>
+            <span className='pl-2'>
               {item.name}
             </span>
             <span className='pl-6'>

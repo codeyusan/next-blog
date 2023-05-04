@@ -3,8 +3,9 @@ import path from 'path';
 import matter from "gray-matter";
 import ReactMarkdown from 'react-markdown'
 
-export default function Markdown({ essay }: any) {
-  return <div className="min-h-screen flex justify-center p-12">
+export default function Markdown({ essay, title }: any) {
+  return <div className="min-h-screen flex items-center p-12 flex-col">
+    <div className="mb-8 text-3xl">{title}</div>
     <article className="prose prose-slate">
       <ReactMarkdown>{essay}</ReactMarkdown>
     </article>
@@ -32,6 +33,7 @@ export async function getStaticProps({params}: any) {
   return {
     props: {
       essay: info.content,
+      title: params.text
     },
   };
 }
