@@ -17,8 +17,6 @@ export default function Detail() {
         <h1 className='text-xl'>欢迎来到MilitantY的博客</h1>
         <button onClick={enterHome} className='border border-slate-300 px-6 py-1 mt-8'>进入</button>
       </div>
-      <div className='absolute bg-black min-h-screen w-1/2 animate-left'></div>
-      <div className='absolute bg-black min-h-screen w-1/2 animate-right'></div>
     </main>
   )
 }
